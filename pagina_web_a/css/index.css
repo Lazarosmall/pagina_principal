@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ .container{
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+ .header{
+    background-image: url(../img/header.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   position: relative;
+   min-height:100vh ;
+   align-items: center;
+ }
+ .menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+ }
+ 
+ .logo{
+    color: #ffffffff;
+    font-size: 2rem;
+    font-weight: bold;
+ }
+
+ .menu .navbar ul li {
+position: relative;
+float: left;
+ }
+
+ .menu .navbar ul li a {
+display: block;
+color: #ffffffff;
+font-size: 1rem;
+font-weight: bold;
+padding: 25px;
+ }
+
+ .menu .navbar ul li a:hover{
+    color: #0a28ec;
+ }
+
+.icons{
+    display: flex;
+}
+ 
+.icons i{
+    color: #ffffffff;
+    margin-right: 20px;
+    font-size: 1.4rem;
+  cursor: pointer;
+}
+.icons i:hover{
+    color: #0a28ec;
+}
+
+#menu{
+    display: none;
+}
+ 
+.menu-icono{
+width: 25px;
+}
+.menu label{
+ cursor: pointer;
+ display: none;
+}
+.header-txt{
+    width: 40%;
+}
+.header-txt h1 {
+    font-weight: 700;
+    font-size: 5rem;
+    margin-bottom: 25px;
+    line-height: 80px;
+    text-transform:uppercase;
+      font-family: "Roboto Condensed", sans-serif;
+      color: #0a28ec;
+     
+}
+ .header-txt p{
+    color:#ffffffff;
+    font-weight: 2rem;
+    font-size: 18px;
+    margin-bottom: 25px;
+ }
+ .btn-1{
+    display: inline-block;
+    padding: 13px 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #ffffffff;
+    background-color: #099fa6;
+    box-shadow: 0 0 20px #000;
+      font-family: "Roboto Condensed", sans-serif;
+      text-align: center;
+
+ }
+  .btn-1:hover{
+    background-color: #0a28ec;
+  }
+  
+  .images{
+width: 800px;
+height: 350px;
+position: absolute;
+right: 0;
+
+  }
+  .swiper{
+    width: 100%;
+    height: 100%;
+  }
+   .swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   }
+.swiper-slide  h3{
+  position: absolute;
+  left: 20px;
+  bottom: 20px;color: #ffffffff;
+  color: #ffffffff;
+   font-family: "Roboto Condensed", sans-serif;
+   font-weight: bold;
+   font-size: 1.5rem;
+   text-transform: uppercase;
+}
+
+.swiper-slide img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 19px;
+}
+
+.rows{
+  width: 180px;
+  position: absolute;
+  right: 620px;
+  bottom: 120px;
+}
+.swiper-button-prev{
+  height: 50px;
+  width: 50px;
+  border: 2px solid #ffffffff;
+  border-radius: 50%;
+  font-size: 15px;
+}
+
+.swiper-button-next{
+  height: 50px;
+  width: 50px;
+  border: 2px solid #ffffffff;
+  border-radius: 50%;
+  font-size: 15px;
+}
+
+.swiper-button-prev::after{
+  font-size: 25px;
+  color: #ffffffff;
+}
+
+.swiper-button-next::after{
+  font-size: 25px;
+  color: #ffffffff;
+}
+
+@media(max-width:991px){
+  .menu{
+    padding: 30px;
+  }
+  .menu label {
+    display: initial;
+}
+.menu .navbar{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #3F3F3F48;
+  backdrop-filter: blur(5px);
+  display: none;
+}
+.menu .navbar ul li {
+  width: 100%;
+}
+#menu:checked ~ .navbar{
+  display: initial;
+}
+.icons{
+  display: none;
+}
+.header{
+  padding: 80px 30px 50px 30px;
+  align-items: self-start;
+  flex-direction: column;
+  align-items: center;
+}
+.header-txt{
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+ .header-txt {
+  margin-bottom: 10px;
+ }
+ .images{
+  position: initial;
+  width: 300px;
+  height: 300px;
+ }
+ .rows{
+ display: none;
+ }
+}
